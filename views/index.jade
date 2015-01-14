@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	#checkoutDiv(class="container")
+		br
+		form#checkout(method="post", action="/process")
+			div(class="form-group")
+				#dropin
+			div(class="form-group")
+				label Select your plan
+				select(name="plan" class="form-control")
+					each plan in plans
+						option(value="#{plan.id}") #{plan.name} ( $#{plan.price} / month )
+
+			input#subscribeBtn(class="btn btn-primary" type="submit", value="Subscribe Now!")
+
+	script(src="https://js.Braintreegateway.com/v2/braintree.js")
+	script.
+		braintree.setup("#{token}", "dropin", {
+			container: "dropin"
+		});

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	- var strResult = JSON.stringify(result.subscription, null, 3);
+	
+	div(class="container")
+		div(class="row")
+			if result.success
+				h1 Your subscription has been processed successfully!
+				br
+				h2 Braintree::Subscription
+				pre #{strResult}
+			else
+				h1. Your subscription has failed :(
+				#{result.message}
