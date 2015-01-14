@@ -1,11 +1,14 @@
 # Using the Braintree API in Node to process a subscription payment
 
+This is an example of the Braintree API using the official Node SDK in Express to set up a subscription.
 
-This is a demo of the Braintree API using the official Node.js SDK to:
+This branch includes a lot of files for the purpose of testing. To see a simplified example please switch to the [simplified](https://github.com/commercefactory/017-braintree-subscription-node/tree/simplified) branch.
 
-* Poll for existing plans
-* Create a customer
-* Create a subscription
+This demo performs the following technical implementations:
+
+* Pulling existing plans from Braintree server
+* Creating a new customer
+* Processing a subscription
 
 ## Technology
 
@@ -20,10 +23,11 @@ This demo uses
 * Run `npm install` to install all dependencies
 * Run `npm start` to start the Express app
 * Visit `http://127.0.0.1:3000/` in your browser
-* Complete the Dropin form using PayPal or Credit Card:
+* Fill in the form using PayPal or a Credit Card:
 	* PayPal
-		* Any email/password combination will work in Sandbox
-	* Credit Card (use the following credentials)
+		* Email: us-customer@commercefactory.org
+		* Password: test1234	
+	* Credit Card
 		* Number: `4111 1111 1111 1111`
 		* CVV: `123`
 		* Expiration date: `11/2020`
