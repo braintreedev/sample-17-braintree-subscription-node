@@ -30,11 +30,6 @@ This demo uses
 * Click Subscribe Now
 * You will receive a message that says "Subscription Successful"
 
-## Running the test
-
-* Requirement: [CasperJS](http://casperjs.org/)
-* Run `npm test` to start the test
-
 ## Useful links
 
 * [The Braintree Node.js SDK](https://developers.braintreepayments.com/javascript+node/sdk/server/overview)
