@@ -5,5 +5,3 @@ node_js:
 before_script:
   - npm install -g casperjs
   - phantomjs --version; casperjs --version
-  - npm start > /dev/null &
-  - sleep 1

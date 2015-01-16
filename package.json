@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "npm start & casperjs test ./tests/subscription-test.js"
+    "test": "npm start > /dev/null & sleep 2 & casperjs test ./tests/subscription-test.js"
   },
   "dependencies": {
     "braintree": "*",
