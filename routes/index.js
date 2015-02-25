@@ -27,13 +27,7 @@ router.post('/process', function(req, res) {
     paymentMethodNonce: nonce
   }, function (err, result) {
     if (result.success) {
-      var token;
-      if (result.customer.creditCards.length > 0) {
-        token = result.customer.creditCards[0].token;
-      }
-      else if (result.customer.paypalAccounts.length > 0) {
-        token = result.customer.paypalAccounts[0].token;
-      }
+      var token = result.customer.paymentMethods[0].token;
 
       gateway.subscription.create({
         paymentMethodToken: token,
