@@ -1,7 +1,5 @@
 # Using the Braintree API in Node to process a subscription payment
 
-[![Build Status](https://travis-ci.org/commercefactory/017-braintree-subscription-node.svg?branch=master)](https://travis-ci.org/commercefactory/017-braintree-subscription-node)
-
 This is an example of the Braintree API using the official Node SDK in Express to set up a subscription.
 
 This branch includes a lot of files for the purpose of testing. To see a simplified example please switch to the [simplified](https://github.com/commercefactory/017-braintree-subscription-node/tree/simplified) branch.
