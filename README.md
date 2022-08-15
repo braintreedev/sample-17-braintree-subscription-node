@@ -1,3 +1,5 @@
+This repo is on a path to archive due to no interaction, checkout our other resources in github.com/paypal.
+
 # Using the Braintree API in Node to process a subscription payment
 
 This is an example of the Braintree API using the official Node SDK in Express to set up a subscription.
